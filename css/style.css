@@ -1,0 +1,347 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+
+  line-height: 1.8;
+} 
+/* css couverture */
+*,::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media(max-width){
+  h1, .medias-btn, img{
+    flex: 100%;
+  }
+}
+
+
+.tete-page{
+  font-size: 30px;
+font-weight: bold;
+ padding-top: 200px; 
+color: rgb(245, 241, 10);
+}
+
+.text-t{
+  font-size: 20px;
+  font-weight: bold; 
+  color:  #030303ef;
+}
+
+ .media-container{
+  display: flex;
+   
+  padding-top: 150px;  
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+} 
+
+.medias-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.icones{
+  width: 35px;
+
+}
+
+
+.btn:hover{
+  background: #fff;
+  color: rgba(51, 51, 51, 0.966);
+}
+
+
+h2{
+  text-transform: uppercase !important;
+  color: rgb(245, 57, 10) !important;
+}
+.parcours-anné{
+  color:  #dc3545;
+}
+
+
+.w3-bar-item{
+color: rgb(245, 57, 10) !important;
+font-size: 20px !important;
+font-weight: bold;
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("../img/manhattan.jpg");
+  min-height: 100%;
+  
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../img/boulglace.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */w
+.bgimg-3 {
+  background-image: url("../img/lamain.jpg");
+  min-height: 400px;
+}
+
+
+.w3-wide {
+  letter-spacing: 10px;
+  color: #000000;
+
+}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .container-fluid, .parcour, .container, .w3-modal-content  {
+    background-attachment: scroll;
+    
+  }
+}
+
+#competences{
+  background-color: rgb(252, 252, 252);
+ 
+}
+
+/*section de parcours */
+section{
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+
+ .container-fluid{
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+text-align: center; 
+
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+.tablink {
+  border: 2px solid #dc3545;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto .2em;
+  z-index: 1;
+  transition: .3s;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.tablink:hover {
+  border: 2px solid #dc3545;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0 auto .2em;
+  z-index: 1;
+  transition: .3s;
+  
+}
+
+
+.w3-button{
+  border-radius: 4px;
+  padding: 2px 4px !important;
+  margin-bottom: 5px;
+  font-size: 12px;
+  background-color: #dc3545;
+  color: white;
+  transition: .6s;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.btn{
+  border-radius: 4px;
+  padding: 2px 4px !important;
+  margin-bottom: 5px;
+  font-size: 12px;
+  background-color: #332f2f;
+  color: white;
+  transition: .6s;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid rgb(19, 19, 19);
+  text-decoration: none;
+}
+
+.col-12{
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+
+.container {
+  position: relative;
+  width: 25%;
+  margin: 15px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+ 
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #1e1f1e;
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+/*Modal*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 4px;
+}
+
+/* Modal Content/Box */
+.w3-modal-content {
+  background-color: #183c53 !important;
+  margin: 15% auto !important; /* 15% from the top and centered */
+  padding: 20px !important;
+  border: 1px solid#e3e7e9c2;
+  width: 100%; /* Could be more or less, depending on screen size */
+  height: auto;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 3px;
+}
+
+/* The Close Button */
+.close {
+  color: rgba(170, 170, 170, 0.274);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img{
+  width: 250px;
+}
+
+.link-modal{
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: #dc3545;
+  color: white;
+  transition: .6s;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 5px;
+}
+.link{
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: #fceb0098;
+  color:#000;
+  transition: .6s;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 5px;
+}
+
+.bas-page{
+  font-size: 50px;
+  color: rgb(245, 57, 10);
+  font-weight: bold;
+  padding-bottom: 120px;
+}
+.tete-page{
+  padding-top: 80px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.parcour{
+  padding: 4px 8px;
+  border: solid;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
