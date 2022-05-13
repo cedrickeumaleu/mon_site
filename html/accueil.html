@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <title>cedrick keumaleu | portefolio - développeur web full-stack </title>
+    <title> portefolio | accueil </title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous">
     <link rel="stylesheet" href="/build/app.1dc1f433.css">
-
-    
     
 
     <script src="../js/mains.js"></script>    
@@ -22,99 +20,100 @@
 <body>
  
     <!-- Navbar (en tête) -->
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="#" class="w3-bar-item w3-button ">ACCUEIL</a>
-      <a href="about_my" class="w3-bar-item w3-button w3-hide-small">| ABOUT MY</a>
-      <a href="parcours" class="w3-bar-item w3-button w3-hide-small">| PARCOURS</a>
-      <a href="portfolio" class="w3-bar-item w3-button w3-hide-small">| PORTFOLIO</a>
-      <a href="contact" class="w3-bar-item w3-button w3-hide-small">| CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover">
-        <i class="fa fa-search"></i>
-      </a>
-    </div>
+  <div class="w3-top">
+      <div class="w3-bar w3-center" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-btn ">ACCUEIL</a>
+        <a href="./about_my.html" class="w3-bar-item w3-btn w3-hide-small">| A PROPOS</a>
+        <a href="./parcours.html" class="w3-bar-item w3-btn w3-hide-small">| PARCOURS</a>
+        <a href="./portfolio.html" class="w3-bar-item w3-btn w3-hide-small">| PORTFOLIO</a>
+        <a href="./contact.html" class="w3-bar-item w3-btn w3-hide-small">| CONTACT</a>
+      
+      </div>
   
-    <!-- Navbar responsive -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#about_my" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT MY</a>
-      <a href="#parcours" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCOURS</a>
-      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-    </div>
+      <!-- Navbar responsive -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="./about_my.html" class="w3-bar-item w3-button" onclick="toggleFunction()">A PROPOS</a>
+        <a href="./parcours.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCOURS</a>
+        <a href="./portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="./contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      </div>
   </div>
   
   <!-- First Parallax Image with Logo Text -->
    <div class="bgimg-1 w3-display-container w3-opacity-min" id="accueil">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">WEL <span class="w3-hide-small"></span> COME</span>
+    <div class="w3-display-middle w3-animate-zoom ">
+      <span class="w3-center w3-padding-large  w3-xlarge w3-wide "><h1><span>WEL</span><span>COME !</span></h1>
     </div>
   </div> 
+
+  
   <!--Container (competences Section) -->
-  <div class="w3-content w3-container w3-animate-zoom w3-padding-64" id="competences">
-    <h2 class="w3-center"><b>About My </b></h2>
-    <p class="w3-center"><em>Développeur de site web, création de sites vitrine, marchands...</em></p>
+  <div class="w3-content w3-container w3-animate-zoom w3-padding-64" id="about_my">
+    <div class="w3-center"><img class="page" src="../css/img/apropo.png"></div>
+    <p class="w3-center"><em>Développeur web et mobile, création de sites vitrine, marchands et application...</em></p>
     <p></p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-animate-opacity w3-padding-large">
-        <p><b><i class="fa fa-user w3-margin-right"></i>CEDRICK KEUMALEU</b></p><br>
-        <img src="../img/snick.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo" width="300" height="250">
+        <p><b><i class="fa fa-user w3-margin-right"></i>CEDRICK KEUMALEU</b></p>
+        <br>
+        <img  src="../css/img/titre_img.png" class="w3-round w3-image  " alt="Photo" width="300" height="250">
+        <p>Travailleur - Rigoureux - Sociable</p>
+        <a class="btn" id="cv" type="submit" onclick="window.open('cv_devfinal.pdf')"><img class="cv" src="../css/img/bt2.jpg"></a>
       </div>
   
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-padding-large">
-        <p>Bienvenue sur mon site web ! Moi c'est Cedrick Keumaleu stagaire dans la structure de formation Onlineformapro, dans la filière de développeur web et web mobille. Passionné du digital et numérique, j'ai plutôt évoluer dans le secteur de l'évènementielle. je suis par ailleur le promoteur de l'agence Go Events (agence évènementille) basé au Cameroun donc le but est de le rendre internationnal . Aquerie des competences et expériences des proffectionnels dans le dommaine du web reste ma priorité principale. tout en èsperant m'intégré au sain d'une équipe dynamique et ambicieuse pour relévé les defi de demain.<br><br>Tout en espérant captiver votre attention, bonne visite. N'esiter pas à laisser votre avis ou à me contacter</p>
+        <p>Bienvenue sur mon portfolio ! Moi c'est Cedrick Keumaleu, stagaire dans la structure de formation<strong> Onlineformapro</strong>, dans la filière de<strong> développeur web et mobile</strong>. curieux de l'expansion du numérique dans le monde et à force de me questionner sur son fonctionnement, j'ai finalement été séduit par ce métier.
+           j'ai plutôt évoluer dans le secteur de l'événementielle et la restauration. Aujourd'hui je me suis reconvertir dans le developpement web, secteur dans le quel je suis complètement épanouir  . Acquérir des connaissances et expériences des professionnelles dans le domaines reste ma priorité principale. tout en esperant m'intégrer au sein d'une équipe dynamique et ambicieuse pour relever les defis de demain.<br><br>Tout en espérant captiver votre attention, bonne visite dans mon portfolio. N'hésitez pas à laisser votre avis ou à me contacter</p>
       </div>
     </div>
-    <h2 class="w3-large w3-center w3-padding-16">Mes Technos:</h2>
-    <p class="w3-wide "><i class="fa fa-camera"></i>Boostrap</p>
+      <h2 class="w3-large w3-center w3-padding-16">Mes Technos:</h2>
+      <p class="w3-wide "><i class="glyphicon glyphicon-bold"></i>Bootstrap</p>
     <div class="w3-red">
       <div class="w3-container  w3-dark-grey w3-center" style="width:80%; height: 15px; "></div>
     </div>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Html / Css</p>
+      <p class="w3-wide"><i class="fab fa-html5 fab fa-css3-alt"></i>Html /<i class="fab fa-css3-alt"></i> Css</p>
     <div class="w3-hover-red">
       <div class="w3-container  w3-dark-grey w3-center" style="width:60%; height: 15px; "></div>
     </div>
     
-    <p class="w3-wide "><i class="fa fa-php"></i>Php</p>
+      <p class="w3-wide "><i class="fab fa-js-square"></i>Javascript</p>
     <div class="w3-hover-red">
       <div class="w3-container  w3-dark-grey w3-center" style="width:40%; height: 15px; "></div>
     </div>
-    <p class="w3-wide"><i class="fa fa-camera"></i>QSL</p>
+      <p class="w3-wide"><i class="fas fa-database"></i>SQL / PHP</p>
     <div class="w3-hover-red">
-      <div class="w3-container  w3-dark-grey w3-center" style="width:35%; height: 15px; "></div>
+      <div class="w3-container  w3-dark-grey w3-center" style="width:50%; height: 15px; "></div>
     </div>
-    <p class="w3-wide"><i class="fa fa-camera"></i>javascript</p>
+      <p class="w3-wide"><i class="fab fa-node"></i>Note.js</p>
     <div class="w3-hover-red">
       <div class="w3-container  w3-dark-grey w3-center" style="width:30%; height: 15px; "></div>
     </div>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Symfony</p>
     <div class="w3-hover-red">
       <div class="w3-container  w3-dark-grey w3-center" style="width:30%;height: 15px;"></div>
     </div>
-    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-    <div class="w3-hover-red">
-      <div class="w3-container w3-dark-grey w3-center" style="width:30%;height: 15px;"></div>
+      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="w3-red">
+      <div class="w3-container w3-dark-grey w3-center" style="width:70%;height: 15px;"></div>
     </div>
   </div>
   <!-- parcours-->
-  <section id="cours">
+  <section id="parcours">
     <div class="container-fluid">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-0 p-md-0 p-lg-3 p-xl-3">
         <!--mobille-->
         <div class="bloc-course-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none">
-          <h2 class="w3-center"><b>parcours </b></h2>
+          <div class="w3-center"><img class="page" src="../css/img/parcours.png"></div>
         </div>
         <!--</mobille-->
           <h3 class="text-center pl-3 pl-sm-3 pl-md-3 pl-lg-0 pl-xl-0 pr-3 pr-sm-3 pr-md-3 pr-lg-0 pr-xl-0 pb-4">
-          En savoir plus sur mon parcours, mes formations, mon expérience professinnelle...
+          En savoir plus sur mon parcours et expérience professinnelle...
           </h3>
-          <div class=" d-flex justify-content-center">
-            <a  class="btn btn-download " href="/build/static/cv.pdf" target="_blank">téléchargez cv</a>
-          </div>
+     
       </div>
     </div>
     <div class="row">
@@ -125,54 +124,55 @@
         <div class="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 p-5">
           <div class="d-flex justify-content-between flex-wrap circles-course pt-5">
 
-            <button class="tablink" onclick="openPage('2017', this, 'orange')" id="defaultOpen">2017</button>
-            <button class="tablink" onclick="openPage('2018', this, 'orange')">2018</button>
-            <button class="tablink" onclick="openPage('2019', this, 'orange')">2019</button>
+            <button class="tablink" onclick="openPage('2012', this, 'orange')" id="defaultOpen">2012</button>
+            <button class="tablink" onclick="openPage('2015', this, 'orange')">2015</button>
+            <button class="tablink" onclick="openPage('2017', this, 'orange')">2017</button>
             <button class="tablink" onclick="openPage('2020', this, 'orange')">2020</button>
             <button class="tablink" onclick="openPage('2021', this, 'orange')">2021</button>
            
-           
-            <div id="2017" class="tabcontent">
-              <h3 class="parcours-anné">2017 / 2018</h3>
-              <h4>promoteur</h4>
+            <div id="2012" class="tabcontent">
+              <h3 class="parcours-anné">2012 / 2015</h3>
+              <h4>Evénementiel</h4>
               <div class="parcour">
-              Get in touch, or swing by for a cup of coffee.hgggggghhhjgdhdhdggfdgdhdhghgdg<br>gdhdhdgfgfhyfhdhdgfgfhdfhdfgfg
+                Nouvellement sortir de ma formation en évenementiel , je me lance et cré
+                ma propre boite que je vais appeller (GO EVENTS), je soutraite dans l'organisation des événements : <br>
+                concert - Mariage - Presentation des marques ou nouveau produit des entreprises
               </div >
             </div>
             
-            <div id="2018" class="tabcontent">
-              <h3 class="parcours-anné">2018</h3>
-              <h4>promoteur</h4>
+            <div id="2015" class="tabcontent">
+                <h3 class="parcours-anné">2015 / 2017</h3>
+                <h4>Directeur Commertial</h4>
               <div  class="parcour">
-              <p>Who we are and what we do.</p>
+                <p>Directeur commercial du Groupe SAFARI<br>Programmation des spectacles , coordination de l'equipe de communication et gestion des artistes.</p>
               </div>
             </div>
 
-            <div id="2019" class="tabcontent">
-              <h3 class="parcours-anné">2019</h3>
-              <h4>promoteur</h4>
+            <div id="2017" class="tabcontent">
+                <h3 class="parcours-anné">2017 / 2020</h3>
+                <h4>Entrepreneur</h4>
               <div class="parcour">
-              <p >Who we are and what we do.</p>
+                <p >Ouverture de mon restaurant cabaret "LAH-KAM"<br> où j'assurai la direction general , je manageais les equipes de comme , resto et la gestion artistique </p>
               </div>
             </div>
 
             <div id="2020" class="tabcontent">
-              <h3 class="parcours-anné">2020</h3>
-              <h4>promoteur</h4>
+                <h3 class="parcours-anné">2020 / 2021</h3>
+                <h4>Reconversion pro</h4>
               <div class="parcour">
-              <p >Who we are and what we do.</p>
+                <p >Reconversion professionnelle à l'AFPA <br> découverte des métier du numérique et préqualification pour la formation <br>
+                    de dévéloppeur web</p>
               </div>
             </div>
 
             <div id="2021" class="tabcontent">
-              <h3 class="parcours-anné">2021</h3>
-              <h4>promoteur</h4>
+                <h3 class="parcours-anné">2021 / 2022</h3>
+                <h4>Formation Dev</h4>
               <div class="parcour">
-              <p >Who we are and what we do.</p>
+                <p >Formation certifiante en developpement web et mobile niveau 5 (Bac+2)<br>
+                    Au centre de formation ONLINEFORMA PRO de Amberieu</p>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@
   <section id="projets">
     <div class="container-fluid w3-animate-top">
       <div class="bloc-projets-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none position-relative">
-        <h2 class="w3-center"><b>Portfolio</b></h2>
+        <div class="w3-center"><img class="page" src="../css/img/portfolio.png"></div>
       </div>
       <div class="row pt-5 pt-sm-5 pt-md-5 p-lg-0 p-xl-0">
         
@@ -197,57 +197,50 @@
         <div class="-col12 col-sm-12 col-md-12 col-lg-11 col-xl-11 p-0 p-sm-0 p-md-0 p-lg-3 p-xl-3 col-projets">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-lg-flex d-xl-flex justify-content-center">
             <div class="row w-100 m-0 row-projects">
-              
-       
             
               <div id="btn_modal1" class="w3-modal">
 
                 <!-- Modal content -->
                 <div class="w3-modal-content w3-animate-zoom w3-card-4">
                   <div class="row-modal">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="https://elodie-martin.com/build/static/skyblue.jpg "alt="img-modal">
-                  </div>
-                    <h4 class="text-projet mt-2">Portfolio</h4><hr>
-                    <span onclick="document.getElementById('btn_modal1').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                      <img class="img-modal" src="../css/img/happy-shop.PNG "alt="img-modal" style="width: 100%;">
+                    </div>
+                      <h4 class="text-projet mt-2">Boutique en ligne</h4><hr>
+                        <span onclick="document.getElementById('btn_modal1').style.display='none'" 
+                         class="w3-button w3-display-topright">&times;</span>
                     <div class="row d-flex align-items-center">
-                      
-                      
                       <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <h4 class="text-title font-weight-bold pb-3 pt-4 pt-sm-4 pt-md-4 pt-lg-0 pt-xl-0 pl-2" ></h4>
                         <p class="font-weight-bold mb-0">Description :</p>
                         <p class="text-description text-justify" style="margin: 15px; ">
-                          Projet réalisé dans le cadre d'un projet étudiant : Réalisation de mon portfolio, en mettant en valeur mes compétences, mon parcours, mes projets, 
-                          et comment me contacter en cas de besoins.
+                          Projet réalisé dans le cadre d'un projet étudiant : Réalisation d'une boutique en ligne avec symfony 5 et PHP 7, réalisation du frond interface blog , panier avec Bootstrap,
+                          Html, Twig . côté back, autantification, connexion, users admin, panier avec MySQL et easyadmin.
+                          paiellement avec stripe. style CSS 
                         </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
-                           HTML ,
-                           javascript ,
-                           PHP ,
+                           HTML , CSS,  
+                           Symfony, Twig, 
+                           PHP , Easyadmin,
                            Bootstrap
                         </p>
                         <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
                           <i class="fas fa-link pr-2"></i>  projet 
                          </a> 
                         
-
                       </div>
                     </div>
                   </div>
                 </div>
-              
               </div>
-
-
               <div id="btn_modal2" class="w3-modal">
 
                 <!-- Modal content -->
                 <div class="w3-modal-content w3-animate-zoom w3-card-4 ">
 
                   <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/yonson.png"  alt="img-modal">
+                    <img class="mw-100 img-modal" src="../css/img/yonson.png"  alt="img-modal" style="width: 100%">
                   </div>
                     <h4 class="text-projet mt-2">Linsaysoes</h4><hr>
                     <span onclick="document.getElementById('btn_modal2').style.display='none'" 
@@ -259,9 +252,9 @@
                         <p class="font-weight-bold mb-0">Description :</p>
                         <p class="text-description text-justify"style="margin: 15px;">
                           Projet réalisé dans le cadre d'un projet étudiant : création d'un blog + partie boutique (), créer une page de blog contenant au moins 3 articles.
-                          créer une page contact . créer un eshop + page woocommerce(produit, tunnelde paiement...). 
+                          créer une page contact . créer un e-shop + page woocommerce 
                         </p>
-                        <p class="font-weight-bold mb-0">Plugins(extensions) Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
                            YOAST (gestion des méta), 
                            CONTACT7Form ,
@@ -273,15 +266,11 @@
                         <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://cedrickk.promo-90.codeur.online/linsayshoes/"target="_blank"style="display: initial;">
                           <i class="fas fa-link pr-2"></i>  projet 
                          </a>
-                        
-
+                      
                       </div>
                     </div>
-                  
                 </div>
-              
               </div>
-
 
               <div id="btn_modal3" class="w3-modal">
 
@@ -289,7 +278,7 @@
                 <div class="w3-modal-content w3-animate-zoom w3-card-4">
 
                   <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/blazers5.jpg"alt="img-modal">
+                    <img class="mw-100 img-modal" src="../css/img/blazers5.jpg"alt="img-modal" style="width: 100%">
                   </div>
                     <h4 class="text-projet mt-2">My Shop</h4><hr>
                     <span onclick="document.getElementById('btn_modal3').style.display='none'" 
@@ -301,7 +290,7 @@
                         <p class="text-description text-justify"style="margin: 15px;">
                           Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
                         </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
                            HTML, 
                            javascript, 
@@ -328,7 +317,7 @@
                 <div class="w3-modal-content w3-animate-zoom w3-card-4">
 
                   <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/lolo.png"alt="img-modal">
+                    <img class="mw-100 img-modal" src="../css/img/boom.PNG"alt="img-modal" style="width: 100%">
                   </div>
                     <h4 class="text-projet mt-2">projet Login</h4><hr>
                     <span onclick="document.getElementById('btn_modal4').style.display='none'" 
@@ -340,7 +329,7 @@
                         <p class="text-description text-justify"style="margin: 15px;">
                           Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
                         </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
                            HTML, 
                            javascript, 
@@ -367,7 +356,7 @@
                 <div class="w3-modal-content w3-animate-zoom w3-card-4">
 
                   <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/entré.jpg"alt="img-modal4">
+                    <img class="mw-100 img-modal" src="../css/img/hotel.jpg"alt="img-modal4" style="width: 100%">
                   </div>
                     <h4 class="text-projet mt-2">Projet hôtel</h4><hr>
                     <span onclick="document.getElementById('btn_modal5').style.display='none'" 
@@ -379,7 +368,7 @@
                         <p class="text-description text-justify"style="margin: 15px;">
                           Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
                         </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
                            HTML, 
                            javascript, 
@@ -406,7 +395,7 @@
                 <div class="w3-modal-content w3-animate-zoom w3-card-4">
 
                   <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/déco1.webp"alt="img-modal4">
+                    <img class="mw-100 img-modal" src="../css/img/deco.png"alt="img-modal4" style="width: 100%">
                   </div>
                     <h4 class="text-projet mt-2">Projet Deco</h4><hr> 
                     <span onclick="document.getElementById('btn_modal6').style.display='none'" 
@@ -416,16 +405,17 @@
                         <h4 class="text-title font-weight-bold pb-3 pt-4 pt-sm-4 pt-md-4 pt-lg-0 pt-xl-0 pl-2" ></h4>
                         <p class="font-weight-bold mb-0">Description :</p>
                         <p class="text-description text-justify"style="margin: 15px;">
-                          Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
+                          Projet réalisé dans le cadre d'un projet étudiant : création d'un site web responsive avec node.js, en utilisant ejs pour le côté Frond et mongo DB pour le Back
                         </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
+                        <p class="font-weight-bold mb-0">Technologie Utilisées :</p>
                         <p class="text-technologies">
-                           HTML, 
+                           HTML, CSS, Ejs
                            javascript, 
-                           PHP, 
-                           Bootstrap
+                           Node.js, 
+                           Bootstrap, w3school, 
+                           Mongo DB
                         </p>
-                        <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
+                        <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2" href="projet_déco/accueil" target="_blank"style="display: initial;">
                           <i class="fas fa-link pr-2"></i>projet 
                          </a>
                          <a class="link mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://github.com/cedrickeumaleu/projet_deco"target="_blank"style="display: initial;">
@@ -439,115 +429,31 @@
               
               </div>
 
-              <div id="btn_modal7" class="w3-modal">
-
-                <!-- Modal content -->
-                <div class="w3-modal-content w3-animate-zoom w3-card-4">
-
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/logo_gris.png"alt="img-modal4">
-                  </div>
-                    <h4 class="text-projet mt-2">Portfolio</h4><hr>
-                    <span onclick="document.getElementById('btn_modal7').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <div class="row d-flex align-items-center">
-                      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <h4 class="text-title font-weight-bold pb-3 pt-4 pt-sm-4 pt-md-4 pt-lg-0 pt-xl-0 pl-2" ></h4>
-                        <p class="font-weight-bold mb-0">Description :</p>
-                        <p class="text-description text-justify"style="margin: 15px;">
-                          Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
-                        </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
-                        <p class="text-technologies">
-                           HTML, 
-                           javascript, 
-                           PHP, 
-                           Bootstrap
-                        </p>
-                        <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
-                          <i class="fas fa-link pr-2"></i>projet 
-                         </a> 
-                         <a class="link mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
-                          <i class="fab fa-github pr-2  " ></i> Github 
-                         </a>
-
-                      </div>
-                    </div>
-                  
-                </div>
-              
-              </div>
-
-              <div id="btn_modal8" class="w3-modal">
-
-                <!-- Modal content -->
-                <div class="w3-modal-content w3-animate-zoom w3-card-4">
-
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <img class="mw-100 img-modal" src="../img/logoevents.png"alt="img-modal4">
-                  </div>
-                    <h4 class="text-projet mt-2">Portfolio</h4><hr>
-                    <span onclick="document.getElementById('btn_modal8').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <div class="row d-flex align-items-center">
-                      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <h4 class="text-title font-weight-bold pb-3 pt-4 pt-sm-4 pt-md-4 pt-lg-0 pt-xl-0 pl-2" ></h4>
-                        <p class="font-weight-bold mb-0">Description :</p>
-                        <p class="text-description text-justify"style="margin: 15px;">
-                          Projet réalisé dans le cadre d'un projet étudiant : création d'un site web avec un jeu de données publiques (API opensky-network), réalisation de la carte et du développement du site
-                        </p>
-                        <p class="font-weight-bold mb-0">Technologie Utiliseées :</p>
-                        <p class="text-technologies">
-                           HTML, 
-                           javascript, 
-                           PHP,
-                           Bootstrap
-                        </p>
-                        <a class="link-modal mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
-                          <i class="fas fa-link pr-2"></i>projet 
-                         </a>
-                         <a class="link mr-0 mr-sm-2 mr-md-2 mr-lg-2 mr-xl-2"href="https://skyblue.elodie-martin.com/"target="_blank"style="display: initial;">
-                          <i class="fab fa-github pr-2  " ></i> Github 
-                         </a> 
-
-                      </div>
-                    </div>
-                 
-                </div>
-              
-              </div>
-
-
-              
-               
                 <div class="container">
-                  <img src="https://elodie-martin.com/build/static/skyblue.jpg" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/happy-shop.PNG" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
-                    <div class="text">Portfolio</div><hr>
+                    <div class="text">Happy-shop</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
                     <button onclick="document.getElementById('btn_modal1').style.display='block'" class="w3-button w3-red">Détails du projet</button>
                      
                   </div>
-                    <h4 class="text-t mt-2">Portfolio</h4>
+                    <h4 class="text-t mt-2">Projet Symfony</h4>
                 </div>
-                
-               
-
-
+              
                 <div class="container">
-                  <img src="../img/yonson.png" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/yonson.png" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
                     <div class="text">Linsayshoes</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
                     <button onclick="document.getElementById('btn_modal2').style.display='block'" class="w3-button w3-red">Détails du projet</button>
                      
                   </div>
-                    <h4 class="text-t mt-2">E-commerce</h4>
+                    <h4 class="text-t mt-2">Wordpress</h4>
                 </div>
 
 
                 <div class="container">
-                  <img src="../img/blazers5.jpg" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/blazers5.jpg" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
                     <div class="text">My shop</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
@@ -559,7 +465,7 @@
 
 
                 <div class="container">
-                  <img src="../img/lolo.png" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/boom.PNG" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
                     <div class="text">Réseau Sociaux</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
@@ -570,48 +476,28 @@
                 </div>
 
                 <div class="container">
-                  <img src="../img/entré.jpg" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/hotel.JPG" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
                     <div class="text">Site Hôtel</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
                     <button onclick="document.getElementById('btn_modal5').style.display='block'" class="w3-button w3-red">Détails du projet</button>
                      
                   </div>
-                    <h4 class="text-t mt-2">Projet Perso</h4>
+                    <h4 class="text-t mt-2">Projet PHP</h4>
                 </div>
 
                 <div class="container">
-                  <img src="../img/déco1.webp" alt="img-projet" class="image" style="width: 100%;" >
+                  <img src="../css/img/deco.PNG" alt="img-projet" class="image" style="width: 100%;" >
                   <div class="middle">
                     <div class="text">Déco intérieur</div><hr>
                     <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
                     <button onclick="document.getElementById('btn_modal6').style.display='block'" class="w3-button w3-red">Détails du projet</button>
                      
                   </div>
-                    <h4 class="text-t mt-2">Projet De Groupe</h4>
+                    <h4 class="text-t mt-2">Projet Node.Js</h4>
                 </div>
 
-                <div class="container">
-                  <img src="../img/logo_gris.png" alt="img-projet" class="image" style="width: 100%;" >
-                  <div class="middle">
-                    <div class="text">#####</div><hr>
-                    <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
-                    <button onclick="document.getElementById('btn_modal7').style.display='block'" class="w3-button w3-red">Détails du projet</button>
-                     
-                  </div>
-                    <h4 class="text-t mt-2">Projet perso</h4>
-                </div>
-
-                <div class="container">
-                  <img src="../img/logoevents.png" alt="img-projet" class="image" style="width: 100%;" >
-                  <div class="middle">
-                    <div class="text">####</div><hr>
-                    <!--<button id="btn_modal" href="#" class="btn btn-outline-info btn-projet">Détails du projet</button>-->
-                    <button onclick="document.getElementById('btn_modal8').style.display='block'" class="w3-button w3-red">Détails du projet</button>
-                     
-                  </div>
-                    <h4 class="text-t mt-2">Projet perso</h4>
-                </div>
+             
 
             </div>
 
@@ -626,65 +512,65 @@
   </section>
 
 
-    <!-- Contact section -->
-    <div class="w3-container w3-animate-left w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-      <div class="w3-content" style="max-width:600px">
-        <h2 class="w3-center"><b>Contact </b></h2>
-        <p> "N'héseritez pas à me contacter pour toute information supmémentaire"</p>
-        <form action="../action_page.php" method="post">
-          <div class="w3-section">
-            <label>Name</label>
-            <input class="w3-input w3-border" type="text" name="name" required>
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input class="w3-input w3-border" type="email" name="email" required>
-          </div>
-          <div class="w3-section">
-            <label>Sujet</label>
-            <input class="w3-input w3-border" type="text" name="sujet" required>
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input w3-border" type="text" name="message" required>
-          </div>
-          <button type="submit" class="w3-button w3-block w3-red w3-margin-bottom">Send Message</button>
-        </form>
-      </div>
-
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 p-sm-0 p-md-0 p-lg-3 p-xl-3 d-flex align-items-center">
-        <div class="pl-4 pr-5">
-          <p class="pt-3">Merci de me contacter via le formulaire pour toute demande. Si besoin,
-            vous
-            pouvez
-            me joindre directement par téléphone.</p>
-            <p class="font-weight-normal">
-              <i class="fas fa-phone"></i>
-              "0755612575"
-              <span class="adresse-mail">
-                <i class="fas fa-at ml-0 ml-sm-4 ml-md-4 ml-lg-4 ml-xl-4 mr-2"></i>
-                "keumaleucedrick@gmail.com"
-              </span>
-            </p>
-            <div class="d-flex pb-5 pb-sm-5 pb-md-5 pb-lg-0 pb-xl-0">
-              <a href="https://www.linkedin.com/in/cedrick keumaleu/"class="circle-social-network-contact circle-linkedin-contact mr-3"target="_blank">
-                <i class="fab fa-linkedin-in linkedin-contact"style="color: rgb(196, 224, 146); transition: all 0.3s ease 0s;"></i>
-
-              </a>
-              <a href="https://www.twitter.com/cedrick keumaleu"class="circle-social-network-contact circle-twitter-contact mr-3"target="_blank">
-                <i class="fab fa-twitter-in twitter-contact"style="color: rgb(196, 224, 146); transition: all 0.3s ease 0s;"></i>
-
-              </a>
-              <a href="https://www.github.com/cedrickeumaleu"class="circle-social-network-contact circle-github-contact mr-3"target="_blank">
-                <i class="fab fa-github-in github-contact"style="color: rgb(196, 224, 146); transition: all 0.3s ease 0s;"></i>
-              </a>
-            </div>
+  <!-- Contact section -->
+  <div class="w3-container w3-animate-left w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center"><b>Contact </b></h2>
+      <p> "N'hésitez pas à me contacter pour toute information suplementaire"</p>
+      <form action="../action_page.php" method="post">
+        <div class="w3-section">
+          <label>Nom</label>
+          <input class="w3-input w3-border" type="text" name="name" required>
         </div>
-      </div>
-
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="email" name="email" required>
+        </div>
+        <div class="w3-section">
+          <label>Sujet</label>
+          <input class="w3-input w3-border" type="text" name="sujet" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-red w3-margin-bottom">Envoyer</button>
+      </form>
     </div>
-  
 
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 p-sm-0 p-md-0 p-lg-3 p-xl-3 d-flex align-items-center">
+      <div class="pl-4 pr-5">
+        <p class="pt-3">Merci de me contacter via le formulaire pour toute demande. Si besoin,
+          vous
+          pouvez
+          me joindre directement par téléphone.</p>
+          <p class="font-weight-normal">
+            <i class="fas fa-phone"></i>
+            "0755612575"
+            <span class="adresse-mail">
+              <i class="fas fa-at ml-0 ml-sm-4 ml-md-4 ml-lg-4 ml-xl-4 mr-2"></i>
+              "keumaleucedrick@gmail.com"
+            </span>
+          </p>
+          <div class="medias-container">
+              <a href="https://www.linkedin.com/in/cedrickkeumaleu/"class="circle-social"target="_blank">
+                <i class="fab fa-linkedin-in linkedin-contact" style="color: rgb(11, 14, 173); transition: all 0.3s ease 0s;"></i>
+
+              </a>
+              <a href="https://www.twitter.com/cedrick keumaleu" class="circle-social"target="_blank">
+                <i class="fab fa-twitter" style="color: rgb(49, 60, 212); transition: all 0.3s ease 0s;"></i>
+
+
+              </a>
+              <a href="https://www.github.com/cedrickeumaleu" class="circle-social"target="_blank">
+                <i class="fab fa-github" style="color: rgb(127, 11, 173); transition: all 0.3s ease 0s;"></i>
+
+              </a>
+          </div>
+      </div>
+    </div>
+
+  </div>
   <script>
     function openPage(pageName,elmnt,color) {
       var i, tabcontent, tablinks;
@@ -738,6 +624,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 </html>

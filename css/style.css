@@ -1,8 +1,8 @@
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", Arial, Helvetica, sans-serif;}
 body, html {
   height: 100%;
-
+  
   line-height: 1.8;
 } 
 /* css couverture */
@@ -11,8 +11,6 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
-
 
 @media(max-width){
   h1, .medias-btn, img{
@@ -34,22 +32,16 @@ color: rgb(245, 241, 10);
   color:  #030303ef;
 }
 
- .media-container{
+ .circle-social-network-contact.circle-twitter-contact.mr-3l{
   display: flex;
-   
-  padding-top: 150px;  
-  margin: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
   justify-content: center;
   align-items: center;
 } 
 
-.medias-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  cursor: pointer;
-}
+
 .icones{
   width: 35px;
 
@@ -64,15 +56,49 @@ color: rgb(245, 241, 10);
 
 h2{
   text-transform: uppercase !important;
-  color: rgb(245, 57, 10) !important;
+  color: rgb(46, 41, 40) !important;
 }
+
+/* animation css h3 */
+h3{
+  animation-duration: 5s !important;
+  animation-name: glissement !important;
+  animation-iteration-count: infinite !important;
+}
+
+@keyframes glissement{
+  from{
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to{
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .parcours-anné{
   color:  #dc3545;
 }
 
+h1{
+  font-size: 80px !important;
+  text-transform: uppercase !important;
+  flex-wrap: wrap;
+  color: #f1f1f1;
+ 
+}
+
+.w3-bar{
+  display:flex;
+  justify-content: center !important;
+}
+
+
 
 .w3-bar-item{
-color: rgb(245, 57, 10) !important;
+color: rgb(41, 38, 37) !important;
 font-size: 20px !important;
 font-weight: bold;
 
@@ -88,20 +114,26 @@ font-weight: bold;
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("../img/manhattan.jpg");
+  background: url("../css/img/manhattan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100%;
   
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../img/boulglace.jpg");
+  background-image: url("../css/img/boulglace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 400px;
 }
 
 /* Third image (Contact) */w
 .bgimg-3 {
-  background-image: url("../img/lamain.jpg");
+  background-image: url("../css/img/lamain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 400px;
 }
 
@@ -141,6 +173,12 @@ margin-right: auto;
 margin-left: auto;
 text-align: center; 
 
+}
+
+.container-first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .row{
   display: flex;
@@ -191,22 +229,21 @@ text-align: center;
 
 .btn{
   border-radius: 4px;
-  padding: 2px 4px !important;
-  margin-bottom: 5px;
-  font-size: 12px;
-  background-color: #332f2f;
+  font-size: 20px !important;
+  background-color: #686767;
   color: white;
   transition: .6s;
   cursor: pointer;
   display: inline-block;
-  border: 2px solid rgb(19, 19, 19);
   text-decoration: none;
 }
+
+
 
 .col-12{
   text-align: center;
   justify-content: center;
-
+  animation-play-state: paused;
 }
 
 
@@ -215,12 +252,20 @@ text-align: center;
   position: relative;
   width: 25%;
   margin: 15px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 18px rgba(0,0,0,.25);
+  color: #69686b;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  transition: all .2s ease-in-out;
 }
 
 .image {
   opacity: 1;
   display: block;
- 
+  border-radius: 25px;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -276,7 +321,7 @@ text-align: center;
   background-color: #183c53 !important;
   margin: 15% auto !important; /* 15% from the top and centered */
   padding: 20px !important;
-  border: 1px solid#e3e7e9c2;
+  border: 1px solid #e3e7e9c2;
   width: 100%; /* Could be more or less, depending on screen size */
   height: auto;
   justify-content: center;
@@ -300,8 +345,18 @@ text-align: center;
   cursor: pointer;
 }
 
-img{
-  width: 250px;
+.imgw3-round, .w3-image{
+  width: 350px;
+ 
+}
+
+.cv{
+  width: 200px;
+}
+
+/* taille des entêtes de page */
+.page{
+  width: 450px;
 }
 
 .link-modal{
@@ -340,8 +395,24 @@ img{
 .parcour{
   padding: 4px 8px;
   border: solid;
+  border-color: rgb(31, 29, 29);
   display: flex;
   flex-wrap: wrap;
-  
+  background: rgba(124, 117, 103, 0.527);
 }
+
+.circle-social{
+  border: solid transparent;
+  border-radius: 50%;
+  background-color:#fff;
+  margin: 3px;
+
+}
+
+.fab{
+  width: 35px;
+  height: 35px !important;
+}
+
+
 

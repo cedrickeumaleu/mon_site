@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title> portefolio | contact </title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous">
+    <link rel="stylesheet" href="/build/app.1dc1f433.css">
+
+    <script src="../js/mains.js"></script>
+ </head>
+ <body>
+         <!-- Navbar (en tête) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="./accueil.html" class="w3-bar-item w3-btn ">ACCUEIL</a>
+      <a href="./about_my.html" class="w3-bar-item w3-btn w3-hide-small">| A PROPOS</a>
+      <a href="./parcours.html" class="w3-bar-item w3-btn w3-hide-small">| PARCOURS</a>
+      <a href="./portfolio.html" class="w3-bar-item w3-btn w3-hide-small">| PORTFOLIO</a>
+      <a href="#" class="w3-bar-item w3-btn w3-hide-small">| CONTACT</a>
+    
+    </div>
+
+    <!-- Navbar responsive -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="./about_my.html" class="w3-bar-item w3-button" onclick="toggleFunction()">A PROPOS</a>
+      <a href="./parcours.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCOURS</a>
+      <a href="./portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+</div>
+    
+
+<div class="w3-container w3-animate-zoom w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center"><b>Contact </b></h2>
+      <p> "N'hésitez pas à me contacter pour toute information suplementaire"</p>
+      <form action="../action_page.php" method="post">
+        <div class="w3-section">
+          <label>Nom</label>
+          <input class="w3-input w3-border" type="text" name="name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="email" name="email" required>
+        </div>
+        <div class="w3-section">
+          <label>Sujet</label>
+          <input class="w3-input w3-border" type="text" name="sujet" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-red w3-margin-bottom">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 p-sm-0 p-md-0 p-lg-3 p-xl-3 d-flex align-items-center">
+      <div class="pl-4 pr-5">
+        <p class="pt-3">Merci de me contacter via le formulaire pour toute demande. Si besoin,
+          vous
+          pouvez
+          me joindre directement par téléphone.</p>
+          <p class="font-weight-normal">
+            <i class="fas fa-phone"></i>
+            "0755612575"
+            <span class="adresse-mail">
+              <i class="fas fa-at ml-0 ml-sm-4 ml-md-4 ml-lg-4 ml-xl-4 mr-2"></i>
+              "keumaleucedrick@gmail.com"
+            </span>
+          </p>
+          <div class="medias-container">
+              <a href="https://www.linkedin.com/in/cedrick keumaleu/"class="circle-social-network-contact circle-linkedin-contact mr-3"target="_blank">
+                <i class="fab fa-linkedin-in linkedin-contact"style="color: rgb(196, 224, 146); transition: all 0.3s ease 0s;"></i>
+
+              </a>
+              <a href="https://www.twitter.com/cedrick keumaleu"class="circle-social-network-contact circle-twitter-contact mr-3"target="_blank">
+                <i class="fab fa-twitter"></i>
+
+              </a>
+              <a href="https://www.github.com/cedrickeumaleu"class="circle-social-network-contact circle-github-contact mr-3"target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+  </script>
+  <script src="/build/app.b76a6946.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ </body>
+ </html>

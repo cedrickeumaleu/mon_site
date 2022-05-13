@@ -1,0 +1,158 @@
+body {font-family: "Lato", Arial, Helvetica, sans-serif;}
+ .container-fluid{
+  height: 100vh;
+  ;
+  background:url("../css/img/de.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.8;
+  justify-content: center;
+  align-items: center;
+ 
+} 
+
+
+
+h3{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family:'abril fatface', sans-serif;
+}
+
+h3 span{
+    position: relative;
+}
+
+.container-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-btn{
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 30px;
+ 
+  
+}
+
+
+ .btn-btn:hover{
+   transition: all 0.3s ease-in-out;
+   background: #f1f1f1;  
+   color: #333;
+ }
+
+
+
+
+.logo{
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 80px;
+    
+    cursor: pointer;
+}
+
+
+.logo-medias{
+    width: 30px;
+    height: 30px;
+}
+
+
+*,::before, ::after{
+    box-sizing: border-box;
+   
+    padding: 0;
+  }
+  
+  
+  
+  @media(max-width){
+    h1, .medias-btn, img{
+      flex: 100%;
+    }
+  }
+  
+
+  .bas-page{
+    font-size: 30px;
+    color: rgb(250, 248, 248);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tete-page{
+    padding-top: 120px;
+    font-size: 30px;
+    color: rgb(252, 250, 250);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-t{
+    font-size: 20px;
+    font-weight: bold; 
+    color:  #030303ef;
+  }
+  
+    .medias{
+    list-style-type: none;
+    position: absolute;
+    right: 2.1%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 100px;
+  }  
+  
+  .bulle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 2px;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+  }
+  .icones{
+    width: 35px;
+  
+  }
+  
+  
+  .btn:hover{
+    background: #fff;
+    color: rgba(51, 51, 51, 0.966);
+  }
+  
+  
+  h3{
+    text-transform: uppercase !important;
+    color: rgb(245, 57, 10) !important;
+  }
+
+.container-first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

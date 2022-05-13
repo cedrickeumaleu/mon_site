@@ -77,4 +77,33 @@ new typewriter(txtAnim,{
 .deleteChars(13)
 .start()
 
+//animation couverture
+const titreSpans = docoment.querysellectorAll('h3 span');
+const btns = document.querysellectorAll('.btn-btn');
+const logo = document.querysellector('.logo');
+const medias = document.querysellectorAll('.bulle');
+
+
+window.addEventlistener('load',()=> {
+const TL = gsap.timeline({paused:true});
+
+TL
+.staggerFrom(titreSpans, 1, {top:-50, opacity:0, ease:"power2.out"}, 0.3)
+.staggerFrom(btns, 1, { opacity:0, ease:"power2.out"}, 0.3, '-=1')
+
+TL.play();
+})
+
+// parallax script scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
  
+// gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'1200px', height:'100%', top:0, left:'50%', x:'-50%'})
+// gsap.set('.scrollDist', {width:'100%', height:'200%'})
+// gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', end:'bottom bottom', scrub:1}})
+
+//     .fromTo('.parallaxsiel', {y:-10},{y:-100}, 0)
+//     .fromTo('.parallaxmontagne1', {y:-30},{y:-250}, 0)
+//     .fromTo('.parallaxmontagne2', {y:-50},{y:-600}, 0)
+
+// $('#arrowBtn').on('mouseenter', (e)=>{ gsap.to('.arrow', {y:10, duration:0.8, ease:'back.inOut(3)', overwrite:'auto'}); })
+// $('#arrowBtn').on('mouseleave', (e)=>{ gsap.to('.arrow', {y:0, duration:0.5, ease:'power3.out', overwrite:'auto'}); })
+// $('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); })

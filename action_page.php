@@ -17,7 +17,7 @@ if(
 }
 
 
-// on stock iciles chams du formulaire dans des variables (name...)
+// on stock ici les chams du formulaire dans des variables (name...)
 
 
 $name = $_POST['name'];
@@ -30,7 +30,7 @@ $message = $_POST['message'];
  if(empty($errors))
  {
     $query = "INSERT INTO `reservation` (name, email, sujet, message) VALUES ('$name', '$email', '$sujet', '$message')";
-    //$sql = "INSERT INTO `reservation` (Nom, Prenom, Téléphone, email, Date_entre, Date_sortie, Adulte, Enfants, Type_de_chambre, msg ) VALUES ( \'kam\', \'jojo\', \'0755612575\', \'keumaleucedrick@gmail.com\', \'01/05/2020\', \'20/05/2021\', \'2\', \'3\', \'Chambre VIP\', \'test\')";
+    
    
 
 //     var_dump($query);
@@ -58,3 +58,4 @@ $message = $_POST['message'];
 }
 
 ?>
+
